@@ -4,7 +4,11 @@ body{
     background-color: rgb(232, 232, 232);
 }
 
-.navbar{
-    background: rgba(233, 244, 232, 1);
+.topline{
+    height: 140px;
+}
+
+#navbar-cont{
+    background-color: #E9F4E8;
     border-radius: 20px;
 }
