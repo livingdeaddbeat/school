@@ -6,6 +6,7 @@ body{
 
 .topline{
     height: 140px;
+    padding: 0px;
 }
 
 #navbar-cont{
