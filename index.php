@@ -42,9 +42,6 @@
 		}elseif($module == 'offer'){
 			include 'routes/offer.php';
 			$title = "Мы предлагаем";
-		}else{
-			include 'routes/main.php';
-			$title = "Гимназия имени марзии турлыхановой ";
 		}
 		$content = ob_get_contents();
 		ob_end_clean();
