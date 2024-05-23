@@ -1,7 +1,6 @@
 <?
 	
 	// Code Protect
-	define('ENGINE', true);
 
 		// ob_start();
 		// if($module == 'advantages'){
@@ -23,7 +22,7 @@
         // }
 		// $content = ob_get_contents();
 		// ob_end_clean();
-		include 'temp/pageWrapper.php';
+		include '../temp/pageWrapper.php';
 
 	// Подключение шаблона
 ?>
