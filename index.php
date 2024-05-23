@@ -42,11 +42,14 @@
 		}elseif($module == 'offer'){
 			include 'routes/offer.php';
 			$title = "Мы предлагаем";
-		}
+		}else{
+
+            include 'temp/pageWrapper.php';
+            $title = "Гимназия имени марзии турлыхановой ";
+        }
 		$content = ob_get_contents();
 		ob_end_clean();
 		
 
 	// Подключение шаблона
-	include 'temp/pageWrapper.php';
 ?>
