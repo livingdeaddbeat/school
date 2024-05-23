@@ -3,3 +3,8 @@ body{
     margin: 0px;
     background-color: rgb(232, 232, 232);
 }
+
+.navbar{
+    background: rgba(233, 244, 232, 1);
+    border-radius: 20px;
+}
