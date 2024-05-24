@@ -1,26 +1,125 @@
+@font-face {
+    font-family: "TEXT";
+    src: url('../fonts/RobotoCondensed-Medium.ttf');
+}
+
 body{
     padding: 0px;
     margin: 0px;
-    background-color: rgb(232, 232, 232);
+    background-color: #E9F4E8;
 }
 
-.topline{
-    height: 140px;
+.container{
+    outline: 1px solid red;
     padding: 0px;
 }
 
+.topline{
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+}
+
+.navbar{
+    padding: 0px;
+
+    position: sticky;
+    top: 0px;
+}
+
 #navbar-cont{
+    height: 10vh;
     background-color: #E9F4E8;
+    font-family: "TEXT";
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-collapse{
+    outline: 3px solid blue;
+}
+
+.navbar-nav{
+    outline: 2px solid red;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+#wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#banner-main{
+    outline: 1px solid red;
+    height: 60vh;
+    background-color: #b9c3b8;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+#request-btn{
+    width: 14vw;
+    height: 6.2vh;
+    background-color: #0A6847;
+    font-weight: bold;
+    position: relative;
+    top: 40vh;
+    left: 10vw;
+    border-radius: 15px;
+}
+
+#banner-advantages{
+    outline: 2px solid red;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    height: 60vh;
+}
+
+#banner-about{
+    margin-top: 20px;
+    outline: 2px solid red;
+    height: 45vh;
 }
 
 #banner-feedback{
-    height: 800px;
+    /* height: 700px; */
+    display: flex;
+    outline: 2px solid green;
+    display: flex;
+    align-items: center;
+    /* padding-right: 5vw; */
+}
+
+#banner-feedback img{
+    height: 667px;
 }
 
 #feedback-cont{
-    width: 840px;
-    overflow: hidden;
+    outline: 2px solid red;
+    width: 700px;
+    height: 45vh;
+    /* overflow: hidden; */
+    /* position: relative;
+    left: -8vw; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feedback-cont-wrap{
+    
+    outline: 2px solid rgb(63, 53, 153);
+    width: 70vw;
+}
+
+.feedback-cont-box{
+    width: 18vw;
+    height: 30vh;
+    background-color: #FEFEC7;
 }
 
 .review {
