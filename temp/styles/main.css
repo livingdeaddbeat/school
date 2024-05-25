@@ -14,17 +14,18 @@ body{
     padding: 0px;
 }
 
-.topline{
-    padding: 0px;
-    position: absolute;
-    top: 0px;
+#topline{
+    /* padding: 0px; */
+   height: 10vh;
+
+    position: sticky;
+    top: 0;
+    z-index: 12;
+    outline: 2px solid blue;
 }
 
 .navbar{
     padding: 0px;
-
-    position: sticky;
-    top: 0px;
 }
 
 #navbar-cont{
@@ -51,7 +52,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    z-index: 9;
 }
 
 #banner-main{
@@ -101,25 +102,115 @@ body{
 
 #feedback-cont{
     outline: 2px solid red;
-    width: 700px;
-    height: 45vh;
+    width: 42vw;
+    /* height: 45vh; */
     /* overflow: hidden; */
-    /* position: relative;
-    left: -8vw; */
+    position: relative;
+    left: -6vw;
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: flex-end; */
 }
+
+#review-text{
+    outline: 2px solid orange;
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 7vw;
+}
+
+#review-text1{
+    font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 16px;
+    color: #0A6847;
+}
+
+#review-text2{
+    font-family: "Ubuntu Mono", monospace;
+  font-weight: bold;
+  font-style: normal;
+    font-size: 56px;
+    color: #111111;
+    line-height: 50px;
+}
+
 
 .feedback-cont-wrap{
     
     outline: 2px solid rgb(63, 53, 153);
-    width: 70vw;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    /* transition: transform 1s ease-in-out; */
+}
+
+.feedback-cont-box:nth-child(even){
+    background-color: #7ABA78;
 }
 
 .feedback-cont-box{
-    width: 18vw;
-    height: 30vh;
+    width: 19.5vw;
+    height: 45vh;
     background-color: #FEFEC7;
+    border-radius: 20px;
+    padding: 40px 30px;
+    display: flex;
+}
+
+.parent-img{
+ display: flex;
+ justify-content: center;
+    height: 10vh;
+}
+
+.parent-image{
+    max-height: 10vh;
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+.dots1{
+    max-height: 4vh;
+    position: relative;
+    top: 6vh;
+    left: 2vw;
+    z-index: 1;
+}
+
+.parent-img span{
+    z-index: 10;
+    color: #FFFFFF;
+    font-size: 40px;
+    position: relative;
+    top: 5.7vh;
+    left: 0.6vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#r2black{
+    color: #111111;
+}
+
+
+.parent-name{
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.feedback-cont-text{
+    font-size: 17px;
+    line-height: 1.8vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .review {
@@ -127,10 +218,53 @@ body{
   }
   
   #pagination {
+    width: inherit;
     margin-top: 10px;
+  }
+
+  #pagination-cont{
+    display: flex;
+    justify-content: flex-end;
   }
   
   #pagination button {
     padding: 5px 10px;
     cursor: pointer;
+    border: 0px;
+  }
+
+  #pagination button img{
+    max-height: 1.5vh;
+    margin: 10px ;
+  }
+
+  .banner-subjects{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #banner-subj-text{
+    font-family: "Ubuntu Mono", monospace;
+  font-style: normal;
+  font-size: 24px;
+  margin-bottom: 20px;
+  }
+
+  .subj-cont{
+    outline: 2px solid red;
+    width: 60vw;
+    height: 40vh;
+    margin-top: 40px ;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .subj-cont-box{
+    width: 13vw;
+    height: 27vh;
+    background-color: #FEFEC7;
+    border-radius: 20px ;
+    padding: 20px;
   }
