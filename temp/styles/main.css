@@ -816,6 +816,16 @@ body {
     height: 450px;
     margin: 20px 0px;
 }
+
+.subj-img-bg {
+  height: 330px;
+  width: 100%;
+}
+
+.subj-cont-box img {
+  height: 200px;
+  z-index: 12;
+}
 }
 
 @media only screen and (max-width: 428px) {
@@ -835,5 +845,14 @@ body {
     width: 365px;
     height: 450px;
     margin: 20px 0px;
+}
+.subj-img-bg {
+  height: 330px;
+  width: 100%;
+}
+
+.subj-cont-box img {
+  height: 200px;
+  z-index: 12;
 }
 }
