@@ -69,3 +69,30 @@ window.addEventListener('resize', updateReviewsPerPage);
 
 // Начальная проверка ширины экрана
 updateReviewsPerPage();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  let currentIndex = 0;
+  const contents = document.querySelectorAll('.content');
+  const prevBtn = document.getElementById('prevBtn-abt');
+  const nextBtn = document.getElementById('nextBtn-abt');
+
+  function showContent(index) {
+      contents.forEach((content, i) => {
+          content.classList.toggle('active', i === index);
+      });
+  }
+
+  prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+      showContent(currentIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % contents.length;
+      showContent(currentIndex);
+  });
+
+  showContent(currentIndex);
+});
+
