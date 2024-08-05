@@ -713,15 +713,14 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
-.subj-img-bg {
-  height: 330px;
-  width: 100%;
-}
+    
+  .subj-img-bg {
+    height: 330px;
+    width: 100%;
+  }
 
 .subj-cont-box img {
   height: 200px;
-  z-index: 12;
 }
   .subj-cont-box {
     width: 240px;
