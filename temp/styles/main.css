@@ -538,6 +538,10 @@ body {
   font-weight: bold;
 }
 
+.card{
+  width: 500px;
+  max-width: 100%;
+}
 #footer {
   height: 20vh;
   background-color: #0a6847;
